@@ -1,0 +1,23 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="application-name" content="FundRequest">
+    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords | strip_html | strip_newlines }}{% else %}{{ site.keywords }}{% endif %}">
+    <meta name="robots" content="index, follow">
+
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+
+    <script defer type="text/javascript" src="assets/js/fontawesome506.js"></script>
+    <script defer type="text/javascript" src="assets/js/atc.min.js"></script>
+    <script defer type="text/javascript" src="assets/js/web3.min.js"></script>
+    <title>{{ page.title }} - FundRequest</title>
+
+
+    <link rel="apple-touch-icon" type="image/png"  href="assets/favicons/logo-single180.png" sizes="180x180" >
+    <link rel="icon" type="image/png" href="assets/img/logo-single32.png" sizes="32x31">
+    <link rel="icon" type="image/png" href="assets/img/logo-single16.png" sizes="16x15">
+
+    <meta name="theme-color" content="#ffffff">
+</head>

@@ -1,0 +1,149 @@
+---
+title: Boost open source
+pagina: Home
+---
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html lang="en">
+{% include head.html %}
+<body>
+<nav class="navlinks navbar navbar-fixed-top headroom headroom--pinned animated">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand">
+                <img class="top" src="logos/Fundrequest-title-white.png" alt="Fundrequest logo">
+                <img class="scroll" src="logos/Fundrequest-title.png" alt="Fundrequest logo">
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+            <div class="nav navbar-nav navbar-right">
+
+            </div>
+        </div>
+    </div>
+</nav>
+<section class="header section section--blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-7">
+                <h1>
+                    Token Balance
+                </h1>
+                <p>
+                    Check your current token balance here!
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-5 tablet-hide">
+                <div class="centerdiv">
+                    <div class="center">
+                        <img class="align-middle" src="assets/img/headerimg.png"
+                             alt="A decentralized marketplace for open source collaboration">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--white section--compact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <form id="statusForm" style="width: 100%">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1">Address:</span>
+                            <input type="text" class="form-control"
+                                   placeholder="ex. 0x123f681646d4a755815f9cb19e1acc8565a0c2ac"
+                                   id="address" pattern="^(0x)?[0-9a-fA-F]{40}$" required>
+                            <span class="input-group-btn">
+                            <button type="submit" class="btn btn-primary" id="btnSearch">Search</button>
+                        </span>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <div class="row" id="result">
+            <div class="col-md-5">
+                <h3>Your balance</h3>
+                <div class="form-group">
+                    <label>Address</label>
+                    <p id="address-result"></p>
+                </div>
+                <div class="form-group">
+                    <label>Balance <span id="balance-etherscan"></span> </label>
+                    <p><img height="18px" src="assets/img/Logo%20icon%20vector.svg"> <span id="balance"></span> FND</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h3>Global</h3>
+                <div class="form-group">
+                    <label>Total Supply</label>
+                    <p id="total-supply"></p>
+                </div>
+                <div class="form-group">
+                    <label>Transfers Enabled</label>
+                    <p id="transfers-enabled"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+
+<section class="footer section section--blue section--compact section--end">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-2 navlinks">
+                <h2>Company</h2>
+                <a href="https://fundrequest.io/#about">About</a>
+                <a href="https://fundrequest.io/#roadmap">Roadmap</a>
+                <a href="https://fundrequest.io/#team">Team</a>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2 col-md-push-1 navlinks">
+                <h2>Resources</h2>
+                <a target="_blank" href="https://fundrequest.io/whitepaper.pdf">Whitepaper</a>
+                <a href="https://docs.fundrequest.io/display/PUB/">Documentation</a>
+                <a target="_blank" href="https://blog.fundrequest.io/">Blog</a>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-4 col-md-push-4 center">
+                <a class="marginR" target="_blank" href="https://github.com/fundrequest/">
+                    <img src="assets/img/github.png" alt="Github">
+                </a>
+                <a class="margin" target="_blank" href="https://fundrequest.chat">
+                    <img src="assets/img/text.png" alt="Text">
+                </a>
+                <a class="margin" target="_blank" href="https://twitter.com/fundrequest_io">
+                    <img src="assets/img/twitter.png" alt="witter">
+                </a>
+                <a class="marginL" target="_blank" href="https://t.me/fundrequestofficial">
+                    <img src="assets/img/mail.png" alt="Email">
+                </a>
+                <br>
+                <a class="typeform-share link button" href="https://fundrequest.typeform.com/to/pu3EGe"
+                   data-mode="drawer_right" data-hide-headers="true" data-hide-footer="true" data-submit-close-delay="1"
+                   target="_blank">SUBSCRIBE TO NEWSLETTER</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="disclaimer">
+                    <p>© 2018 FundRequest OÜ </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+{% include footer.html %}
+</body>
+</html>

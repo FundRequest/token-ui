@@ -1,0 +1,15 @@
+# Site settings
+title: FundRequest
+email: info@fundrequest.io
+description: "FundRequest - Boost open source"
+keywords: "fundrequest, ico, github funding, issue funding, funding, ethereum, eth"
+baseurl: "/token-ui" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+twitter_username: fundrequest_io
+github_username:  FundRequest
+sass:
+  sass_dir: assets/css
+  style: compressed
+
+# Build settings
+markdown: kramdown
