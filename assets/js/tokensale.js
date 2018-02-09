@@ -8,7 +8,6 @@
 
   var $balance = $('#balance');
   var $addressResult = $('#address-result');
-  var $totalSupply = $('#total-supply');
   var $transfersEnabled = $('#transfers-enabled');
   var $resultsContainer = $('#result');
   var $balanceEtherscan = $('#balance-etherscan');
@@ -35,18 +34,9 @@
       }
     });
   };
-  var showTotalSupply = function () {
-    frContract.totalSupply.call(function (err, res) {
-      if (!err) {
-        var supply = Number(web3.fromWei(res.toNumber()));
-        $totalSupply.html('' + supply.format(2));
-      }
-    });
-  };
 
   var showTransfersEnabled = function () {
     frContract.transfersEnabled.call(function (err, res) {
-      console.log(err);
       if (!err) {
         if(res === true) {
           $transfersEnabled.html('<i class="fas fa-check-circle"></i>');
@@ -66,7 +56,6 @@
     showAccountBalance(address);
   });
 
-  showTotalSupply();
   showTransfersEnabled();
 
 
