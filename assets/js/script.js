@@ -99,8 +99,6 @@ $(document).ready(function() {
 
 });
 
-function fund_updatemonth(idx) {
-    $(".monthslider .month").hide();
-    $(".monthslider").find(".month:eq(" + idx + ")").show();
-    $(window).trigger('refreshheight');
-}
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
