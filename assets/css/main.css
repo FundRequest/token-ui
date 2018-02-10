@@ -78,7 +78,7 @@ section.footer a.margin { margin: 0 14px; }
 section.footer a.marginR { margin: 0 14px 0 0; }
 section.footer a.marginL { margin: 0 0 0 14px; }
 section.footer a.button { line-height: 40px; margin-top: 25px; padding: 8px 48px; width: 100%; text-align: center;}
-section.footer a img { width: 52px; }
+section.footer a img { width: 34px; }
 section.footer .navlinks a { margin-top: 8px; font-size: 21px; color: #FFF; margin-left: 0; float: left; clear: both;}
 section.footer .disclaimer { padding: 100px 0 20px 0; float: left;  width: 100%; text-align: center; }
 section.footer .disclaimer a {text-decoration: underline; top: 0; margin: 0; float: none; display: inline-block; color: #dfeff9; font-size: 18px; font-family: 'jaf-domus' !important; }
@@ -405,7 +405,7 @@ section.partners .nopadding .border-l { border-left: 1px solid #bde4f6; }
 	section.footer .navlinks { margin-bottom: 35px; }
 	section.footer { text-align: center; }
 	section.footer a { float: none; }
-	section.footer a img { width: 45px; }
+	section.footer a img { width: 34px; }
 	section.footer .navlinks a { margin: 0; float: none; display: block; }
 	section.footer a.button { margin: 0; width: 100%; margin-top: 15px; max-width: 275px; }
 	section.footer a.margin { margin: 0 13px; }

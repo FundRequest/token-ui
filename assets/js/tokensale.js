@@ -5,6 +5,14 @@
 
     return (c ? num.replace('.', c) : num).replace(new RegExp(re, 'g'), '$&' + (s || ' '));
   };
+  $.urlParam = function (name) {
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)')
+      .exec(window.location.href);
+    if (results && results.length > 0) {
+      return results[1] || 0;
+    }
+    return 0;
+  };
 
   var $balance = $('#balance');
   var $addressResult = $('#address-result');
@@ -38,7 +46,7 @@
   var showTransfersEnabled = function () {
     frContract.transfersEnabled.call(function (err, res) {
       if (!err) {
-        if(res === true) {
+        if (res === true) {
           $transfersEnabled.html('<i class="fas fa-check-circle"></i>');
         } else {
           $transfersEnabled.html('<i class="fas fa-times-circle"></i>');
@@ -58,6 +66,15 @@
 
   showTransfersEnabled();
 
+  var addressUrlParam = $.urlParam('address');
+  if (addressUrlParam) {
+    $('#address').val(addressUrlParam);
+    $('#statusForm').trigger("submit");
+  }
+
+  $('a.info').click(function (e) {
+    e.preventDefault();
+  });
 
 
   // });
