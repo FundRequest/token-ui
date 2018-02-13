@@ -92,6 +92,12 @@ pagina: Home
                         <p><img height="18px" src="assets/img/Logo%20icon%20vector.svg"> <span id="balance"></span> FND
                         </p>
                     </div>
+                    <div>
+                        <a href="#" class="etherwallet-instructions"
+                                data-toggle="modal" data-target="#modal-etherwallet">
+                            How to add tokens in MyEtherWallet?
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -146,6 +152,59 @@ pagina: Home
     </div>
 
 </section>
+
+
+<div class="modal fade" id="modal-etherwallet" tabindex="-1" role="dialog"
+     aria-labelledby="modal-etherwallet-labelledby"
+     data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title text-center" id="modal-token-sale-labelledby">
+                    <span>Add tokens to <img src="assets/img/myetherwallet-logo.png" height="25" /> </span>
+
+                </h4>
+            </div>
+            <div class="modal-body">
+                <ol>
+                    <li>
+                        <small>Go to <a href="https://www.myetherwallet.com" target="_blank">myetherwallet.com</a></small>
+                    </li>
+                    <li>
+                        <small>Click on <i>View Wallet Info</i></small><br/>&nbsp;
+                        <img src="assets/img/myetherwallet_viewinfo.png" height="35px"/>
+                    </li>
+                    <li>
+                        <small>Fill in your address and click on <i>View Balance</i></small>
+                    </li>
+                    <li>
+                        <small>On the right hand side, click on <i>Add Custom Token</i></small>
+                        <ul>
+                            <li><label>Token Contract Address</label><br/>&nbsp;
+                                <small>0x4DF47B4969B2911C966506E3592c41389493953b</small>
+                            </li>
+                            <li><label>Token Symbol</label><br/>&nbsp;
+                                <small>FND</small>
+                            </li>
+                            <li><label>Decimals</label><br/>&nbsp;
+                                <small>18</small>
+                            </li>
+                        </ul>
+                        <img src="assets/img/myetherwallet_addtoken.png" height="300px"/>
+                    </li>
+                    <li>
+                        <small>Click save</small>
+                    </li>
+                    <li>
+                        <small>Congratulations, your tokens are now visible in MyEtherWallet!</small>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 {% include footer.html %}
