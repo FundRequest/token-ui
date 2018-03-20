@@ -59,7 +59,7 @@
         var dateEnd = new Date(0);
         dateEnd.setUTCSeconds(Number(res[2].toNumber()));
         var vestingEnd = dateToYMD(dateEnd);
-        $vestedBalance.html(amountPending);
+        $vestedBalance.html('' + amountPending.format(2));
         $vestingEnd.html(vestingEnd);
         if(amountPending > 0) {
           $vestedBalanceContainer.show();
